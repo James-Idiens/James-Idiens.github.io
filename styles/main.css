@@ -10,17 +10,32 @@ nav {
 }
 
 nav ul {
-    width: 100%; 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #29b9f1;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
   
 nav ul li {
-    width: 20%; /*5 menu items divide into 100*/
     float: left;
+    border-right: 1px solid #cecece;    
 }
 
 nav ul li a {
   display: block;
-  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+ }
+
+ nav ul li a:hover {
+background-color: #c74900;
  }
 
  h1 {
