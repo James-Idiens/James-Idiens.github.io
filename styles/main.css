@@ -1,44 +1,70 @@
+
 body {
+  
   font-family: Verdana, sans-serif;
   width: 100%;
-  margin: 0 auto;
-}
+  margin: 0 auto; /*removes whitespace edge of navbar*/
+  
 
+}
+.homepage{
+  background-color: rgb(187, 186, 186); /* in case image fails to load text is still readable*/
+  background-image: url("../images/mtcook.jpg");
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken; /*makes text more readable*/
+  background-position: center;
+ 
+  
+  
+}
 nav {
   width: 100%;
   margin: 20px 0; 
 }
 
 nav ul {
-  list-style-type: none;
+  list-style-type: none; /*gets rid of bullet points*/
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #29b9f1;
-  position: fixed;
+  position: fixed; /*keeps it at top of page*/
   top: 0;
   width: 100%;
 }
   
 nav ul li {
     float: left;
-    border-right: 1px solid #cecece;    
+    border-right: 1px solid #cecece; /*creates apperance of boxes on navbar*/    
 }
 
 nav ul li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 14px 16px; /*gives the navbar its shape*/
+  text-decoration: none; /*removes the underline to the link*/
   
  }
 
  nav ul li a:hover {
 background-color: #c74900;
- }
+ } /*when you hover over it gives another colour*/
+
+ 
 
  h1 {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 70px;
+  color: rgb(223, 219, 219);
  }
+
+ .contianer {
+  text-align: left;
+  color: rgb(0, 0, 0);
+  
+  
+}
