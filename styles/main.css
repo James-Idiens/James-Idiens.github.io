@@ -13,7 +13,7 @@ body {
   }
 }
 .homepage{
-  background-color: rgb(187, 186, 186); /* in case image fails to load text is still readable*/
+  background-color: rgb(187, 186, 186); /*blend color.*/
   background-image: url("../images/mtcook.jpg");
   padding-top: 100px;
   padding-bottom: 200px;
@@ -74,7 +74,7 @@ background-color: #c74900;
   color: rgb(223, 219, 219);
  }
 
- .contianer {
+ .contianer { /*formatting the blog writing content*/
   text-align: left;
   color: rgb(0, 0, 0);
   width: 90%;
