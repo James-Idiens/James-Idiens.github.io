@@ -1,88 +1,92 @@
 
-body {
-  
-  font-family: Verdana, sans-serif;
-  width: 100%;
-  margin: 0 auto; /*removes whitespace edge of navbar*/
-  
+  html { /*removes whitespace around background image*/
+    margin: 0;
+    padding: 0;
+  }
 
-}
-@media (max-width: 640px) {
   body {
-    padding-top: 260px; /*gets rid of gap between navbar and content*/
+    font-family: Verdana, sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
-}
-.homepage{
-  background-color: rgb(187, 186, 186); /*blend color.*/
-  background-image: url("../images/mtcook.jpg");
-  padding-top: 100px;
-  padding-bottom: 200px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: darken; /*makes text more readable*/
-  background-position: center;
- 
   
   
-}
-nav {
-  width: 100%;
-  margin: 20px 0; 
-}
+  .homepage{
+    background-color: rgb(187, 186, 186);
+    background-image: url("../images/mtcook.jpg");
+    padding-top: 100px;
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+  }
+  
+  nav {
+    width: 100%;
+    margin: 0 0 0 0; /*prevents whitespace around navbar*/
+    display: flex;
+    justify-content: center;
+    background-color: #29b9f1;
+    padding: 0;
+    top: 0;
+  
 
-nav ul {
-  list-style-type: none; /*gets rid of bullet points*/
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #29b9f1;
-  position: fixed; /*keeps it at top of page*/
-  top: 0;
-  width: 100%;
-}
-
-
-
-nav ul li {
-    float: left;
-    border-right: 1px solid #cecece; /*creates apperance of boxes on navbar*/    
-}
-@media (max-width: 640px) {
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+  }
+  
   nav ul li {
-    float: none; /*displays the navbar top down on smaller screens*/
+    margin: 0 10px;
   }
   
-}
-nav ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px; /*gives the navbar its shape*/
-  text-decoration: none; /*removes the underline to the link*/
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
   
- }
-
- nav ul li a:hover {
-background-color: #c74900;
- } /*when you hover over it gives another colour*/
-
- 
-
- h1 {
-  text-align: center;
-  padding-top: 70px;
-  color: rgb(223, 219, 219);
- }
-
- .contianer { /*formatting the blog writing content*/
-  text-align: left;
-  color: rgb(0, 0, 0);
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  nav ul li a:hover {
+    background-color: #c74900;
+    border-radius: 5px;
+  }
   
-}
-
-.page-content {
-  padding-top: 30px;
-}
+  h1 {
+    text-align: center;
+    padding-top: 70px;
+    color: rgb(223, 219, 219);
+  }
+  
+  .contianer {  /*formatting the blog writing content*/
+    text-align: left;
+    color: rgb(0, 0, 0);
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .page-content {
+    padding-top: 30px;
+  }
+  
+  @media (max-width: 640px) {
+        
+    nav ul {
+      flex-direction: column; /*changes it to top down navbar*/
+    }
+    
+    nav ul li {
+       margin: 10px 0; /*increases spacing between menu items when on smaller screen */
+    }
+  }
