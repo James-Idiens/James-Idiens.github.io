@@ -2,6 +2,8 @@
   html { /*removes whitespace around background image*/
     margin: 0;
     padding: 0;
+    height: 100%;
+    
   }
 
   body {
@@ -16,11 +18,14 @@
     background-color: rgb(187, 186, 186);
     background-image: url("../images/mtcook.jpg");
     padding-top: 100px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
     background-position: center;
+    position: relative;
+    
+    
   }
   
   nav {
@@ -66,21 +71,53 @@
   h1 {
     text-align: center;
     padding-top: 70px;
-    color: rgb(223, 219, 219);
+    color: rgb(32, 32, 32);
   }
+  
   
   .contianer {  /*formatting the blog writing content*/
     text-align: left;
     color: rgb(0, 0, 0);
     width: 90%;
     margin: 0 auto;
+    
   }
-  
+
+  .about-me-text {
+    border: solid 4px rgb(7, 1, 5);
+    border-radius: 10%;
+    padding: 0 10px 0 10px;
+    background-color: rgba(216, 215, 215, 0.986);
+    position: absolute; /*using absolute allows elements to be stacked on top of each other*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*puts element in the centre*/
+    margin-top: 200px; /*way to move the element up and down etc*/
+    display: flex;
+  }
+
   .page-content {
-    padding-top: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
-  @media (max-width: 640px) {
+  .blog-post {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  
+  .blog-post h2 {
+    margin-bottom: 10px;
+  }
+  
+  .blog-post p {
+    line
+
+  
+  
+  @media only screen and (max-width: 767px) {
         
     nav ul {
       flex-direction: column; /*changes it to top down navbar*/
@@ -88,5 +125,20 @@
     
     nav ul li {
        margin: 10px 0; /*increases spacing between menu items when on smaller screen */
+    }
+
+    .homepage {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+    .about-me-text {
+      position: absolute; /*??how to get absolute elements responsive??*/
+      margin-top: 0px;
+      width: 100%;
+      max-width: 90%;
+      left: 3%; /*keeps it centered and not off screen to the left*/      
+      transform: translate(0, -50%);
+      top: 180%; /*moves it down the screen*/
+
     }
   }
