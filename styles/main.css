@@ -11,12 +11,17 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    display: flex; /*trying to move the footer to the bottom of the page in flexbox*/
+    flex-direction: column;
+    min-height: 100vh; /*ensures that the body takes up at least the height of the viewport*/
   }
   
-  
+  main {
+    flex: 1; /*make elements take up remaining space between header and footer*/
+  }
   .homepage{
-    background-color: rgb(187, 186, 186);
-    background-image: url("../images/mtcook.jpg");
+    background-color: rgb(150, 150, 150);
+    background-image: url("../images/heroimage.jpg");
     padding-top: 100px;
     padding-bottom: 150px;
     background-repeat: no-repeat;
@@ -27,7 +32,8 @@
     
     
   }
-  
+
+   
   nav {
     width: 100%;
     margin: 0 0 0 0; /*prevents whitespace around navbar*/
@@ -64,14 +70,16 @@
   }
   
   nav ul li a:hover {
-    background-color: #c74900;
+    background-color: #b4b4b4;
     border-radius: 5px;
   }
   
   h1 {
     text-align: center;
     padding-top: 70px;
-    color: rgb(32, 32, 32);
+    color: rgb(211, 211, 211);
+    font-family: sans-serif;
+    font-size: 60px;
   }
   
   
@@ -83,19 +91,7 @@
     
   }
 
-  .about-me-text {
-    border: solid 4px rgb(7, 1, 5);
-    border-radius: 10%;
-    padding: 0 10px 0 10px;
-    background-color: rgba(216, 215, 215, 0.986);
-    position: absolute; /*using absolute allows elements to be stacked on top of each other*/
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /*puts element in the centre*/
-    margin-top: 200px; /*way to move the element up and down etc*/
-    display: flex;
-  }
-
+  
   .page-content {
     margin-top: 50px;
     display: flex;
@@ -112,6 +108,24 @@
     margin-bottom: 10px;
   }
   
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: auto; /*pushes footer to bottom of page*/
+  }
+
+  .footer-contianer {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-container p {
+    margin: 0;
+    font-size: 16px;
+  }
   
   
   @media only screen and (max-width: 767px) {
@@ -128,14 +142,7 @@
       padding-top: 200px;
       padding-bottom: 200px;
     }
-    .about-me-text {
-      position: absolute; /*??how to get absolute elements responsive??*/
-      margin-top: 0px;
-      width: 100%;
-      max-width: 90%;
-      left: 3%; /*keeps it centered and not off screen to the left*/      
-      transform: translate(0, -50%);
-      top: 180%; /*moves it down the screen*/
+    
 
-    }
+    
   }
