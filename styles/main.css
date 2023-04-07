@@ -14,11 +14,13 @@
     display: flex; /*trying to move the footer to the bottom of the page in flexbox*/
     flex-direction: column;
     min-height: 100vh; /*ensures that the body takes up at least the height of the viewport*/
+    background-color: azure;
   }
   
   main {
     flex: 1; /*make elements take up remaining space between header and footer*/
   }
+  
   .homepage{
     background-color: rgb(150, 150, 150);
     background-image: url("../images/heroimage.jpg");
