@@ -144,7 +144,7 @@
     }
     
     nav ul li {
-       margin: 10px 0; /*increases spacing between menu items when on smaller screen */
+       margin: -1px; /*decreases spacing for mobile to make it more compact */
     }
 
     .homepage {
