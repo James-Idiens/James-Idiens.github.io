@@ -37,36 +37,74 @@
     </ul>
   </nav>
   <main class="page-content">
+    <div class="fixed-example">
+      <p>
+        This is fixed positioning!
+      </p>
+    </div>
     <div class="blog-post">
       <h2>What are the differences between relative, absolute, and fixed positioning?</h2>
     </div>
     <div class="blog-post">
-      <p>In web development, there are different types of positioning techniques such as relative, absolute, and fixed positioning. These positioning techniques allow you to control the layout of your web page, and each technique has its own set of properties and characteristics. In this post, we'll discuss and explain the differences between relative, absolute, and fixed positioning.</p>
+      <p>
+        In web development, there are different types of positioning techniques such as relative, absolute, and fixed positioning. These positioning techniques allow you to control the layout of your web page, and each technique has its own set of properties and characteristics. In this post, we'll discuss and explain the differences between relative, absolute, and fixed positioning.
+      </p>
     </div>
     <div class="blog-post">
       <h3>Relative Positioning</h3>
-      <p>Relative positioning is a type of positioning technique that positions an element relative to its normal position. Relative positioning lets you move an element from its original position without affecting the other elements on the page. For example:</p>
+      <p>
+        Relative positioning is a type of positioning technique that positions an element relative to its normal position. Relative positioning lets you move an element from its original position without affecting the other elements on the page. For example this code results in the text below it.
+      </p>
+      <pre>
+        <code>
+         div style="position: relative; left: 20px;"
+        </code>
+      </pre>
       <div style="position: relative; left: 20px;">
-        <p>This text has been moved 20 pixels to the right using relative positioning!</p>
+        <p>
+          This text has been moved 20 pixels to the right using relative positioning!
+        </p>
       </div>
     </div>
     <div class="blog-post">
       <h3>Absolute Positioning</h3>
-      <p>Absolute positioning lets you place an element anywhere on the page, like a specific paragraph or image. One of the advantages of absolute positioning is that it allows you to position an element precisely where you want it on the page, but on the other hand this overlap can lead to layout issues. This obnoxiously placed image will cover the text thanks to absolute positioning.</p>
+      <p>
+        Absolute positioning lets you place an element anywhere on the page, like a specific paragraph or image. One of the advantages of absolute positioning is that it allows you to position an element precisely where you want it on the page, but on the other hand this overlap can lead to layout issues. This obnoxiously placed image will cover the text thanks to absolute positioning. Inspect element to see how it's done
+      </p>
       <div style="position: relative;">
         <img src="../images/example.jpg" alt="example" style="max-height: 200px; max-width: 200px; position: absolute; top: -20px; right: 100px;">
       </div>     
     </div>
     <div class="blog-post">
       <h3>Fixed Positioning</h3>
-      <p>Fixed positioning allows an element to remain in the same spot even as you scroll down the page. An example of this is a navigation menu that always stays at the top of the page.
+      <p>
+        Fixed positioning allows an element to remain in the same spot even as you scroll down the page. An example of this is a navigation menu that always stays at the top of the page.
         The advantage of fixed positioning, is that it allows you to create elements that remain visible on the page as the user scrolls. Fixed positioning can lead to issues with responsive design, meaning it may not work well on smaller or different sized screens.
         </p>
-        <p>The navbar at the top of the site is an example of fixed positioning</p>
+        <p>
+          It's impossible to miss the red box at the bottom left which stays on the screen as you scroll. This is an example of fixed positioning. This is done with the following code.
+        </p>
+          <pre>
+            <code>.fixed-example {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: auto;
+            background-color: #ff1919;
+            border: 3px solid #000000;
+          }
+            </code>
+          </pre>
+        <p>
+          Going through line by line we can see position: fixed is the key here. Bottom and left are to keep it at the bottom left of the page. The rest of the code is stylistic choices (in bad taste, I know).
+        </p>  
+        
     </div>
     <div class="blog-post">
       <h3>Conclusion</h3>
-      <p>In summary, relative, absolute, and fixed positioning are different types of positioning techniques that allow you to control the layout of your web page. Relative positioning is useful for adjusting the position of an element without affecting other elements on the page. Absolute positioning is useful for positioning an element precisely where you want it on the page, and fixed positioning is useful for creating elements that remain in the same spot as you scroll down the page. All of these techniques have there advantages and disadvantages and are suitable for different tasks.</p>
+      <p>
+        In summary, relative, absolute, and fixed positioning are different types of positioning techniques that allow you to control the layout of your web page. Relative positioning is useful for adjusting the position of an element without affecting other elements on the page. Absolute positioning is useful for positioning an element precisely where you want it on the page, and fixed positioning is useful for creating elements that remain in the same spot as you scroll down the page. All of these techniques have there advantages and disadvantages and are suitable for different tasks.
+      </p>
     </div>
   </main>
 
