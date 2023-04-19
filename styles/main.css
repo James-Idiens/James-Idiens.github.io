@@ -144,6 +144,42 @@
     background-color: #ff1919;
     border: 3px solid #000000;
   }
+
+  .card-container {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 20vh;
+  }
+  .card {
+    background-color: white;
+    border: 1px solid #bacdd8;
+    padding: 8px;
+    border-radius: 12px;
+  }
+  .card-image {
+    width: 100%;
+    border-radius: 12px;
+    height: 214px;
+    object-fit: cover;
+  }
+  .card-content {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 16px;
+    text-decoration: none;
+  }
+
+  .card-button {
+  border: 1px solid rgb(112, 112, 112);
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #0077ff;
+  background-color: #e0efff;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer; /* gives it a cursor on hover over to show it's a clickable link */
+  }
   
   @media only screen and (max-width: 767px) {
         
