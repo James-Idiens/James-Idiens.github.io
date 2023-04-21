@@ -129,11 +129,12 @@
     font-size: 16px;
   }
 
-  pre code { /*this styles code in html*/
+  code { /*this styles code in html*/
     background-color: #eee;
     border: 1px solid #999;
     display: block;
     padding: 20px;
+    white-space: pre-line
    }
   
    .fixed-example {

@@ -43,45 +43,52 @@
       <p>Javascript has something called control flow. Quite simply, this means the order in which a program executes its code. The code is executed in a top down fashion from first line to the last line - unless the program runs across a structure that changes that flow. In javascript that last part is extremely common.</p>
     </div>
     <div class="blog-post">
-      <p>One way to change the structure is through loops. Imagine you have a stack of 10 chairs and you want to count them one by one. You would start with the first chair and say “one,” then move to the next chair and say “two,’ and keep going until you reach 10, the final chair. In programming a loop is something that does exactly that.
+      <p> 
+        One way to change the structure is through loops. Imagine you have a stack of 10 chairs and you want to count them one by one. You would start with the first chair and say “one,” then move to the next chair and say “two,’ and keep going until you reach 10, the final chair. In programming a loop is something that does exactly that.
+     
       </p>
-      <pre>
+      
         <code>for (let i = 1; i <= 10; i++) {
         console.log(i);
       }
-        </code>
-      </pre>
-      <p>In this code we will count the ten chairs (note computers start counting from 0 but for the sake of this concept we will count from 1). In this code, let i = 1 initialises a variable i to 1, which will be our starting point as the first chair. The condition i <= 10 means that the loop will continue to run as long as i is less than or equal to 10. Finally, i++ increments i by 1 after each iteration of the loop. So this code is doing the same thing as we would do above, counting the chairs one at a time until we reach the final chair. Console.log(i) will just print the numbers to the console so we can see the numbers counting up to 10.
+         </code>
+    
+      <p>
+        In this code we will count the ten chairs (note computers start counting from 0 but for the sake of this concept we will count from 1). In this code, let i = 1 initialises a variable i to 1, which will be our starting point as the first chair. The condition i <= 10 means that the loop will continue to run as long as i is less than or equal to 10. Finally, i++ increments i by 1 after each iteration of the loop. So this code is doing the same thing as we would do above, counting the chairs one at a time until we reach the final chair. Console.log(i) will just print the numbers to the console so we can see the numbers counting up to 10.
       </p>
     </div>
     <div class="blog-post">
-      <p>The DOM, or document object model is, the way you make javascript interact with your website. It’s more complicated than that, but as a simple concept that’s the best way to describe it. Let's say you wanted to change the text of a button on a web page. You could use JavaScript to select the button element from the DOM and then change its text using a method.
+      <p>
+        The DOM, or document object model is, the way you make javascript interact with your website. It’s more complicated than that, but as a simple concept that’s the best way to describe it. Let's say you wanted to change the text of a button on a web page. You could use JavaScript to select the button element from the DOM and then change its text using a method.
       </p>
     </div>
     <div class="blog-post">
-      <p>Arrays and objects are a way to store and access data in javascript. Let’s say you had a record collection and you wanted a way to keep track of each album's title, artist and year. You can do this using an array of objects
+      <p>
+        Arrays and objects are a way to store and access data in javascript. Let’s say you had a record collection and you wanted a way to keep track of each album's title, artist and year. You can do this using an array of objects
       </p>
-      <pre>
-        <code>let recordCollection = [
-          { artist: "The Beatles", album: "Sgt. Pepper's Lonely Hearts Club Band", year: 1967 },
-          { artist: "The Beach Boys", album: "Surf’s Up", year: 1971 },
-          { artist: "Bruce Springsteen", album: "Nebraska", year: 1982 }
+      
+        <code>let recordCollection = [ <br>
+          { artist: "The Beatles", album: "Sgt. Pepper's Lonely Hearts Club Band", year: 1967 }, <br>
+          { artist: "The Beach Boys", album: "Surf’s Up", year: 1971 }, <br>
+          { artist: "Bruce Springsteen", album: "Nebraska", year: 1982 }<br>
         ]
         </code>
-     </pre>
-      <p>Here recordCollection is the array, which stores three objects. Each object represents a record in the collection, and has three properties (artist, album and year). Arrays of objects like this can be useful for keeping track of collections of related data. This record collection array could be used to display a list of records on a web page, search for records by artist or album or for a variety of other uses.
+     
+      <p>
+        Here recordCollection is the array, which stores three objects. Each object represents a record in the collection, and has three properties (artist, album and year). Arrays of objects like this can be useful for keeping track of collections of related data. This record collection array could be used to display a list of records on a web page, search for records by artist or album or for a variety of other uses.
       </p>
     </div>
     <div class="blog-post">
-      <p>Functions are reusable blocks of code that perform a specific task. They're incredibly helpful because they allow you to write code once and use it multiple times. An example is if you  need to convert celsius to fahrenheit. 
+      <p>
+        Functions are reusable blocks of code that perform a specific task. They're incredibly helpful because they allow you to write code once and use it multiple times. An example is if you  need to convert celsius to fahrenheit. 
       </p>
-      <pre>
+      
         <code>function celsiusToFahrenheit(celsius) {
           let fahrenheit = (celsius * 9/5) + 32;
           return fahrenheit;
         }
         </code>
-      </pre>
+      
       <p>Here, we've stored the equation for converting celsius to fahrenheit, and now whenever we need to convert, rather than typing out the equation every time, it’s stored as the function celsiusToFahrenheit(celsius). The celsius in brackets is where you input the temperature you want to convert e.g. typing celsiusToFahrenheit(25) would give the equivalent temperature in Fahrenheit for 25 degrees Celsius (77 degrees Fahrenheit). Functions save time and allow you to write less code.
       </p>
     </div>
